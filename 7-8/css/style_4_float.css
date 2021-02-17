@@ -1,0 +1,39 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#base {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#left {
+    width: 200px;
+    height: 100%;
+    background-color: rgb(255, 2, 255);
+}
+
+#right {
+    width: 200px;
+    height: 100%;
+    background-color: rgb(2, 255, 255);
+}
+
+#middle {
+    height: 100%;
+    background-color: rgb(255, 255, 2);
+}
+
+/* float layout model method */
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+}

@@ -1,6 +1,22 @@
 # 百度前端技术学院练习
 
 * [第五天和第六天：三种简历](http://ife.baidu.com/course/detail/id/40)
-    * [作业1](5-6/result1.html)
-    * [作业2](5-6/result2.html)
-    * [作业3](5-6/result3.html)
+    * [作业1](5-6/result_1.html)
+    * [作业2](5-6/result_2.html)
+    * [作业3](5-6/result_3.html)
+* [第七天到第八天，学习布局](http://ife.baidu.com/course/detail/id/42)
+    * [实现一个两栏布局，左侧占30%宽度，右侧占70%宽度](7-8/result_1.html)
+    * 实现一个两栏布局，左侧固定宽度，右侧根据浏览器宽度进行自适应变化
+        + [主流方法](7-8/result_2.html)
+        + [负边距方法](7-8/result_2_margin.html)
+    * 实现一个两栏布局，右侧固定宽度，左侧根据浏览器宽度进行自适应变化
+        + [主流方法](7-8/result_3.html)
+        + [浮动方法](7-8/result_3_float.html)
+    * 实现一个三栏布局，左侧固定宽度，右侧固定宽度，中间部分宽度随浏览器宽度变化而自适应变化
+        + [主流方法](7-8/result_4.html)
+        + [浮动方法](7-8/result_4_float.html)
+        + [负边距方法](7-8/result_4_margin.html)
+    * 实现一个三栏布局，左侧固定宽度，中间固定宽度，右侧根据浏览器宽度变化而自适应变化
+        + [主流方法](7-8/result_5.html)
+        + [负边距方法](7-8/result_5_margin.html)
+    * [编码作业](7-8/result-6.html)

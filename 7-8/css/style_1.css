@@ -1,0 +1,83 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#base {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#left {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(255, 2, 255);
+}
+
+#right {
+    width: 70%;
+    height: 100%;
+    background-color: rgb(2, 255, 255);
+}
+
+/* float layout model method */
+
+#left {
+   float: left;
+}
+
+#right {
+    float: right;
+}
+
+/* position layout model method */
+
+#left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* flex layout model method */
+
+#base {
+    display: flex;
+}
+
+/* table layout model method */
+
+#base {
+    display: table;
+}
+
+#left {
+    display: table-cell;
+}
+
+#right {
+    display: table-cell;
+}
+
+/* grid layout model method */
+
+#base {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+}
+
+#left {
+    width: 100%;
+}
+
+#right {
+    width: 100%;
+}

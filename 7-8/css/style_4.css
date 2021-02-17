@@ -1,0 +1,83 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#base {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#left {
+    width: 200px;
+    height: 100%;
+    background-color: rgb(255, 2, 255);
+}
+
+#right {
+    width: 200px;
+    height: 100%;
+    background-color: rgb(2, 255, 255);
+}
+
+#middle {
+    height: 100%;
+    background-color: rgb(255, 255, 2);
+}
+
+/* position layout model method */
+
+/* #left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#middle {
+    padding: 0 200px;
+    box-sizing: border-box;
+} */
+
+/* table layout model method */
+
+/* #base {
+    display: table;
+}
+
+#left {
+    display: table-cell;
+}
+
+#middle {
+    display: table-cell;
+}
+
+#right {
+    display: table-cell;
+} */
+
+/* flex layout model method */
+
+/* #base {
+    display: flex;
+}
+
+#middle {
+    flex: 1;
+} */
+
+/* grid layout model method */
+
+#base {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+}

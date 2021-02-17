@@ -1,0 +1,48 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#base {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#left {
+    width: 200px;
+    height: 100%;
+    background-color: rgb(255, 2, 255);
+}
+
+#right {
+    width: 200px;
+    height: 100%;
+    background-color: rgb(2, 255, 255);
+}
+
+#middle {
+    height: 100%;
+    background-color: rgb(255, 255, 2);
+}
+
+/* negetive margin method */
+
+#middle {
+    width: 100%;
+    float: left;
+    padding: 0 200px;
+    box-sizing: border-box;
+}
+
+#left {
+    float: left;
+    margin-left: -100%;
+}
+
+#right {
+    float: left;
+    margin-left: -200px;
+}

@@ -1,0 +1,92 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#base {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#left {
+    width: 200px;
+    height: 100%;
+    background-color: rgb(255, 2, 255);
+}
+
+#right {
+    height: 100%;
+    background-color: rgb(2, 255, 255);
+}
+
+#middle {
+    width: 200px;
+    height: 100%;
+    background-color: rgb(255, 255, 2);
+}
+
+#left {
+    float: left;
+}
+
+#middle {
+    float: left;
+}
+
+/* position layout model method */
+
+/* #left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#right {
+    width: 100%;
+    padding-left: 400px;
+    box-sizing: border-box;
+}
+
+#middle {
+    position: absolute;
+    top: 0;
+    left: 200px;
+} */
+
+/* table layout model method */
+
+/* #base {
+    display: table;
+}
+
+#left {
+    display: table-cell;
+}
+
+#middle {
+    display: table-cell;
+}
+
+#right {
+    display: table-cell;
+} */
+
+/* flex layout model method */
+
+/* #base {
+    display: flex;
+}
+
+#right {
+    flex: 1;
+} */
+
+/* grid layout model method */
+
+/* #base {
+    display: grid;
+    grid-template-columns: 200px 200px 1fr;
+} */

@@ -1,0 +1,82 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#base {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#left {
+    /* width: 100%; */
+    height: 100%;
+    background-color: rgb(255, 2, 255);
+}
+
+#right {
+    width: 200px;
+    height: 100%;
+    background-color: rgb(2, 255, 255);
+}
+
+/* negetive margin method */
+
+#left {
+    width: 100%;
+    float: left;
+    padding-right: 200px;
+    box-sizing: border-box;
+}
+
+#right {
+    float: left;
+    margin-left: -200px;
+}
+
+/* position layout model method */
+
+/* #left {
+   padding-right: 200px;
+   box-sizing: border-box;
+}
+
+#right {
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+
+/* table layout model method */
+
+/* #base {
+    display: table;
+}
+
+#left {
+    display: table-cell;
+}
+
+#right {
+    display: table-cell;
+} */
+
+/* flex layout model method */
+
+/* #base {
+    display: flex;
+}
+
+#left {
+    flex: 1;   
+} */
+
+/* grid layout model method */
+
+/* #base {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+} */
