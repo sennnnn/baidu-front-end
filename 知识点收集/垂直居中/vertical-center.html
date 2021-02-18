@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+        body,html {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* .wrap {
+            width: 100%;
+            height: 100%;
+            background-color: blue;
+            display: table;
+        }
+        .box{
+            width: 100%;
+            height: 100%;
+            font-size: 24px;
+            background: red;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+        } */
+        #bg {
+            height: 90%;
+            width: 90%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            /* background-color: turquoise; */
+            display: flex;
+            flex-direction: column;
+        }
+        .bg-row {
+            flex: 1;
+            /* width: 100%; */
+            background-color: rgb(2, 255, 240);
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+        }
+        .bg-cell {
+            flex: 1;
+            border: 3px black solid;
+            background-color: rgb(255, 2, 255);
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+        }
+        #absolute_position_wrap {
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+        #absolute_position_margin_base {
+            height: 200px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background-color: chartreuse;
+        }
+        #line_height_base {
+            height: 200px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #line_height_wrap {
+            line-height: 200px;
+            text-align: center;
+        }
+        #table_cell_base {
+            height: 100%;
+            background-color: chartreuse;
+            display: table;
+        }
+        #table_cell_wrap {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        #flex_cell_base {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        #baseline_base {
+            height: 50%;
+            background-color: rgb(129, 216, 209);
+        }
+        #baseline_wrap {
+            height: 50%;
+            background-color: rgb(117, 64, 154, 0.6);
+            margin-top: -25%;
+        }
+</style>
+<body>
+<div id="bg"> 
+    <div class="bg-row">
+        <div class="bg-cell" id="vertical-center-1">
+            <div id="absolute_position_wrap">
+                使用绝对定位来进行垂直居中对齐。(文本和块级元素都可用)
+            </div>
+        </div>
+        <div class="bg-cell" id="vertical-center-2">
+            <div id="absolute_position_margin_base">
+                使用绝对定位加边距适配来进行垂直居中对齐。(块级元素可用)
+            </div>
+        </div>
+        <div class="bg-cell" id="vertical-center-3">
+            <div id="line_height_base">
+                <div id="line_height_wrap">
+                    使用行高法来居中 (单行文本可用)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-row">
+        <div class="bg-cell" id="vertical-center-4">
+            <div id="table_cell_base">
+                <div id="table_cell_wrap">
+                    使用表格布局来居中 (文本和块级元素都可用)
+                </div>
+            </div>
+        </div>
+        <div class="bg-cell" id="vertical-center-5">
+            <div id="flex_cell_base">
+                <div id="flex_cell_wrap">
+                    使用 flex 布局来居中 (文本和块级元素都可用)
+                </div>
+            </div>
+        </div>
+        <div class="bg-cell" id="vertical-center-6">
+            <div id="baseline_base">  
+            </div>
+            <div id="baseline_wrap">
+                使用基准 div 来进行垂直居中 (块级元素可用)
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
